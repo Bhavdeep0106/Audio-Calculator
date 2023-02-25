@@ -10,7 +10,7 @@ class Calculator {
         this.statement += val;
         document.getElementById('statement').innerHTML = this.statement;
     }
-    awnswer() {
+    answer() {
         document.getElementById('result').innerHTML = eval(this.statement);
         if (this.voiceStart) 
             this.speak();
@@ -51,7 +51,7 @@ document.addEventListener('click', function (val) {
     target = val['target']['tagName'].toLowerCase();
     if (target == 'button') {
         if (val['target']['innerHTML'] == '=') 
-            calc.awnswer();
+            calc.answer();
         else if (val['target']['innerHTML'] == 'DEL') 
             calc.remove();
         else 
@@ -64,7 +64,7 @@ recognition.onresult = function (e) {
     if (e.results[0].isFinal) {
         splitVoice(transcript)
         if (transcript.includes('equal')) {
-            calc.awnswer();
+            calc.answer();
         }
     }
 };
