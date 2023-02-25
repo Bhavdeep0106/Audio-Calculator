@@ -1,2 +1,4 @@
-# Hakathon-Project
-My project is an Online Calculator with Voice Recognition which allows the users to perform basic arithmetic operations using voice commands or the on-screen keyboard. It's web-based and can be accessed from any browser.
+#  Audio Calculator-Hakathon
+This project is a calculator using web based technology with audio recognition inbuilt .
+
+My goal is to create an audio calculator that can do some basic math calculations including addition, subtraction, multiplication and division among integers 0 to 9.
